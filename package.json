@@ -1,0 +1,19 @@
+{
+  "name": "igor-lib-coffee",
+  "version": "1.0.0",
+  "description": "Библиотека функций, используемых в проектах Игоря Полякова.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "noggatur"
+  },
+  "keywords": [
+    "library",
+    "coffeescript"
+  ],
+  "author": "iGor Polyakov",
+  "license": "ISC"
+}
