@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "noggatur"
+    "url": "git@github.com:noggatur/igor-lib-coffee.git"
   },
   "keywords": [
     "library",
