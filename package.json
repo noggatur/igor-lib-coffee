@@ -16,7 +16,9 @@
   ],
   "author": "iGor Polyakov",
   "license": "ISC",
-  "devDependencies": {
-    "coffee-script": "^1.12.2"
+  "dependencies": {
+    "browserify": "^13.1.1",
+    "coffee-script": "^1.12.2",
+    "uglify-js": "^2.7.5"
   }
 }
