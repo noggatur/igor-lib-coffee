@@ -15,5 +15,8 @@
     "coffeescript"
   ],
   "author": "iGor Polyakov",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.12.2"
+  }
 }
