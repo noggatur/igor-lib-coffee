@@ -1,11 +1,11 @@
 # Работа с датой и временем
-
-h = require './helpers.js'
-date = new Date()
-
 module.exports =
   # Российский формат даты
   rusDate: (day, month, year) ->
+    h = require './helpers.js'
+
+    date = new Date()
+
     # Формат — ("after", 2, "months") или ("today")
     if day is "today" or day is "after" or day is "before" or !h.isset(day)
       if day is "after"

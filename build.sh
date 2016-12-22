@@ -10,16 +10,25 @@ if [ ! -d "lib-js" ]; then
   mkdir lib-js
 fi
 
-# Создаём папку build
-if [ ! -d "build" ]; then
-  mkdir build
-fi
+# # Создаём папку build
+# if [ ! -d "build" ]; then
+#   mkdir build
+# fi
 
 # Компилируем CoffeeScript в JavaScript
 coffee -co lib-js lib-coffee
 
-# Собираем все файлы в один
-browserify lib-js/igor-lib.js -o build/igor-lib.js
+# # Собираем все файлы в один
+# browserify build/standalone.js -o build/igor-lib.js
 
-# Сжимаем выходной файл
-uglifyjs build/igor-lib.js -o build/igor-lib.min.js
+# # Забываем пути к файлам
+# unpathify build/igor-lib.js
+
+# # Сжимаем выходной файл
+# uglifyjs build/igor-lib.js -o build/igor-lib.min.js
+
+# Сборка тестового примера
+browserify test/script.js -o test/script.compiled.js
+
+# Забываем пути к файлам
+unpathify test/script.compiled.js
